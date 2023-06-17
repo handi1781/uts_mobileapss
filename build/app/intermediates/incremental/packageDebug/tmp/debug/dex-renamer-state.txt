@@ -1,0 +1,4 @@
+#Sun Jun 04 12:33:40 WIB 2023
+base.0=E\:\\Bootcamp\\udemy_couse2\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,110 @@
+{
+   "checksum": "91f697572fdddaf6e93f4cf75dcdee8d",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13317803008327871",
+            "date_last_used": "0",
+            "guid": "78f0d545-c628-4d4c-8a12-47cb17262232",
+            "id": "14",
+            "name": "Create a MySQL database hosted in Google Cloud - AppSheet Help",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://support.google.com/appsheet/answer/10107301?hl=en"
+         }, {
+            "children": [ {
+               "date_added": "13263192531485329",
+               "date_last_used": "0",
+               "guid": "72558e42-634b-4a96-b34a-d7b650b524ca",
+               "id": "16",
+               "name": "ASUS Homepage",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://www.asus.com/"
+            }, {
+               "date_added": "13263192531489961",
+               "date_last_used": "0",
+               "guid": "a5f22a23-1f1c-4180-ac4f-3a65f0aa4dec",
+               "id": "17",
+               "name": "ASUS Member",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "https://account.asus.com/"
+            } ],
+            "date_added": "13329747585281845",
+            "date_last_used": "0",
+            "date_modified": "13329750735029664",
+            "guid": "1e0a5235-060e-461d-8ca7-cba800184a6a",
+            "id": "15",
+            "name": "ASUS E-Service",
+            "source": "import_fre",
+            "type": "folder"
+         }, {
+            "date_added": "13328982794965748",
+            "date_last_used": "0",
+            "guid": "13e4e276-41b2-4ed2-aced-6447ef9a8d93",
+            "id": "18",
+            "name": "Jancok App",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://localhost:60986/#/"
+         }, {
+            "date_added": "13329747580629574",
+            "date_last_used": "0",
+            "guid": "e845b823-e44d-4b6e-9581-1b13074b972f",
+            "id": "7",
+            "name": "ASUS Software Portal - Exclusive technology",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/Software-and-Innovations-Portal/"
+         }, {
+            "date_added": "13329747580629265",
+            "date_last_used": "0",
+            "guid": "d46fb5ee-a389-4a43-8995-94ccde4ced10",
+            "id": "6",
+            "name": "MyASUS Software - Get the best from ASUS PC",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/ASUS-Software/"
+         } ],
+         "date_added": "13329747580353613",
+         "date_last_used": "0",
+         "date_modified": "13330574731405258",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13329747580353653",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13329747580353696",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCObTdJSIAQAAKg4QABgBIAAoBTAAOABAABIAIAEqGElUUy9oYnZpZlZnU0hVRzcxbkhqdHc9PaAGDBKJAQgBEoQBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQ5NDljMGY5Yi1lNGFkLTU0MmEtYjM3Yy00NmI5MjEzNzY5NzkYACAAKAAw5/L655AvOND2msb1L0DQ9prG9S9KHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAEqcBCBESogEKHENmbXFWdTNyQ3lYU3h3TWE4Mkd6T1NwVkdXZz0SJGE1ZjIyYTIzLTFmMWMtNDE4MC1hYzRmLTNhNjVmMGFhNGRlYxgAIAAoADCOz/3BgTE4gdD9wYExQIHQ/cGBMUocSVVBSFJDUzF4Y0twTmVQWlBVRithMllRUjVzPVoeIhxzZDdHc2FDTU8wbCsrZURnVUxnSEVZbkpHWDg9ZQAAAAASiQEIAxKEAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkMDA5NjdmZjQtYWI0ZS01YWZiLTk0OTktOWFkYjY1NjE2OGZhGAAgACgAMOfy+ueQLziw9prG9S9AsPaaxvUvShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAABKnAQgPEqIBChx2NlpMeW5rUmZaY3k5YXUxaXlqMFgxMm1KWWc9EiQxZTBhNTIzNS0wNjBlLTQ2MWQtOGNhNy1jYmE4MDAxODRhNmEYACAAKAAwjM/9wYExONbP/cGBMUDWz/3BgTFKHGpHd2VwME9Cb3pMS215RHdoNzk2VEVKV0xsRT1aHiIcU1o5RDNGNW5rMFUrZXNNRldHdGViMDFZTTNzPWUAAAAAEqcBCBASogEKHHRtbjVIQnk3VFlrZ0luYSt2NlhJNHBNNFZqST0SJDcyNTU4ZTQyLTYzNGItNGE5Ni1iMzRhLWQ3YjY1MGI1MjRjYRgAIAAoADCNz/3BgTE47c/9wYExQO3P/cGBMUocWjNUZzNZcTVhZ093UUo3a200YjQra1BZemRrPVoeIhxFMmhHbmlSZ2pJSmQ4dzh4VlRCcWtraDVvTnc9ZQAAAAASpwEIDhKiAQocdElHUGxMdmw1bnRzWHN5aXFKWnNBRWIvRHdFPRIkNzhmMGQ1NDUtYzYyOC00ZDRjLThhMTItNDdjYjE3MjYyMjMyGAAgAigCMLLaieKHMTiajdLR2TBAstqJ4ocxShwwT0FaUGxDSWxlMDVBTjBwRmRQQnFyeFVhNWM9Wh4iHEpkVDVKSXI4cmhDbk5iTS8rTkVZMS9qM0RlRT1lEDD/5BKnAQgSEqIBChxFemEyTTRYOWZSTTBwUjNjZlYySnVBZ1lkRHc9EiQxM2U0ZTI3Ni00MWIyLTRlZDItYWNlZC02NDQ3ZWY5YThkOTMYACACKAIws9qJ4ocxOKqD06WDMUCz2onihzFKHFJLT0hQS1lDTFA2VlF6cnlTdWUxalArZkdpaz1aHiIcdklYaGtuTmhtVENyTXA3L1pXRTZ0NlRpalNVPWWypPl6EokBCAIShAEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDNjZTA3MmY3LWU3ZDQtNTRmNC04MjRiLTRiZjkxZWY4MTk3ZRgAIAAoADDn8vrnkC84wPaaxvUvQMD2msb1L0ocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAAAwADgA",
+   "version": 1
+}
