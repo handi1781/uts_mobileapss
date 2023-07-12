@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
         decoration: const BoxDecoration(
             gradient: LinearGradient(colors: [
           Color.fromARGB(255, 240, 243, 240),
-          Color.fromARGB(218, 17, 235, 126)
+          Color.fromARGB(218, 4, 75, 39)
         ])),
         child: activeScreen,
       )),
