@@ -1,3 +1,8 @@
-2023/06/07-14:36:38.499 4854 Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.47d2b19f\flutter_tools_chrome_device.206faddf\Default\Asset Store\assets.db/MANIFEST-000001
-2023/06/07-14:36:38.500 4854 Recovering log #10
-2023/06/07-14:36:38.502 4854 Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.47d2b19f\flutter_tools_chrome_device.206faddf\Default\Asset Store\assets.db/000010.log 
+2023/07/13-21:29:37.660 1e4c Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.c079f34d\flutter_tools_chrome_device.d97a4f44\Default\Asset Store\assets.db/MANIFEST-000001
+2023/07/13-21:29:37.670 1e4c Recovering log #13
+2023/07/13-21:29:37.743 1e4c Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.c079f34d\flutter_tools_chrome_device.d97a4f44\Default\Asset Store\assets.db/000013.log 
+2023/07/13-21:29:37.745 1e4c Delete type=2 #3
+2023/07/13-21:29:37.746 1e4c Delete type=2 #6
+2023/07/13-21:29:37.746 1e4c Delete type=0 #7
+2023/07/13-21:29:37.746 1e4c Delete type=2 #9
+2023/07/13-21:29:37.746 1e4c Delete type=0 #10

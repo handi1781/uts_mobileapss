@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:udemy_couse2/start_screen.dart';
 import 'package:udemy_couse2/login.dart';
 
