@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:udemy_couse2/page.dart';
+import 'package:udemy_couse2/signup.dart';
 
 class content extends StatefulWidget {
   const content({super.key});
@@ -72,7 +73,7 @@ class _contentState extends State<content> {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: "Username/ID",
+                          hintText: "Email",
                           hintStyle:
                               TextStyle(color: Color.fromARGB(255, 3, 97, 18)),
                         ),
@@ -99,14 +100,36 @@ class _contentState extends State<content> {
                     SizedBox(
                       height: 20.0,
                     ),
-                    OutlinedButton(
+                    MaterialButton(
+                      minWidth: double.infinity,
+                      height: 60,
                       onPressed: () {
                         Navigator.of(context).pushReplacement(MaterialPageRoute(
                           builder: (context) => const page(),
                         ));
                       },
+                      color: Color.fromARGB(255, 4, 128, 35),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(40)),
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    OutlinedButton(
+                      onPressed: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => const register(),
+                        ));
+                      },
                       child: const Text(
-                        "Log In",
+                        "Register",
                         style:
                             TextStyle(color: Color.fromARGB(255, 13, 129, 3)),
                       ),

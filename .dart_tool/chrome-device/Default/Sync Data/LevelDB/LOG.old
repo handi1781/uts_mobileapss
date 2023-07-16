@@ -1,5 +1,8 @@
-2023/07/13-21:25:23.647 610 Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.de3c20a8\flutter_tools_chrome_device.620baeb2\Default\Sync Data\LevelDB/MANIFEST-000001
-2023/07/13-21:25:23.648 610 Recovering log #9
-2023/07/13-21:25:23.650 610 Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.de3c20a8\flutter_tools_chrome_device.620baeb2\Default\Sync Data\LevelDB/000009.log 
-2023/07/13-21:25:23.650 610 Delete type=0 #3
-2023/07/13-21:25:23.650 610 Delete type=0 #6
+2023/07/15-07:18:25.019 5f90 Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.5ae92b13\flutter_tools_chrome_device.86bc1b82\Default\Sync Data\LevelDB/MANIFEST-000001
+2023/07/15-07:18:25.020 5f90 Recovering log #9
+2023/07/15-07:18:25.023 5f90 Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.5ae92b13\flutter_tools_chrome_device.86bc1b82\Default\Sync Data\LevelDB/000009.log 
+2023/07/15-07:18:25.023 5f90 Delete type=0 #3
+2023/07/15-07:18:25.023 5f90 Delete type=0 #6
+2023/07/15-07:28:09.323 4620 Level-0 table #13: started
+2023/07/15-07:28:09.556 4620 Level-0 table #13: 87924 bytes OK
+2023/07/15-07:28:09.565 4620 Delete type=0 #9

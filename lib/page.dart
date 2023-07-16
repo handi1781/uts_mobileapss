@@ -82,8 +82,11 @@ class _pageState extends State<page> {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => player()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                MyHomePage(title: "Players")));
                   },
                   child: Container(
                     decoration: BoxDecoration(
@@ -160,7 +163,7 @@ class _pageState extends State<page> {
                 ),
               ],
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, mainAxisSpacing: 5, crossAxisSpacing: 5),
+                  crossAxisCount: 2, mainAxisSpacing: 5, crossAxisSpacing: 5),
             ),
           ),
         ),
