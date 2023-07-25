@@ -2,146 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-
-// class player extends StatefulWidget {
-//   player({Key? key, required this.title}) : super(key: key);
-
-//   final String title;
-
-//   @override
-//   State<player> createState() => _playerState();
-// }
-
-// class _playerState extends State<player> {
-//   final apiUrl = 'http://localhost:5000/flutter';
-
-//   List<dynamic> data = [];
-//   bool isLoading = true;
-
-//   final idController = TextEditingController();
-//   final namaController = TextEditingController();
-//   final posisiController = TextEditingController();
-
-//   @override
-//   void initState() {
-//     super.initState();
-//     fetchData();
-//   }
-
-//   Future<void> fetchData() async {
-//     setState(() {
-//       isLoading = true;
-//     });
-
-//     try {
-//       final response = await http.get(Uri.parse(apiUrl));
-
-//       if (response.statusCode == 200) {
-//         setState(() {
-//           data = json.decode(response.body);
-//           isLoading = false;
-//         });
-//       } else {
-//         throw Exception('Failed to fetch data');
-//       }
-//     } catch (error) {
-//       throw Exception('Failed to connect to the server');
-//     }
-//   }
-
-//   Future<void> addData() async {
-//     final response = await http.post(
-//       Uri.parse(apiUrl),
-//       headers: {'Content-Type': 'application/json'},
-//       body: json.encode({
-//         'nama': namaController.text,
-//         'posisi': posisiController.text,
-//       }),
-//     );
-
-//     if (response.statusCode == 201) {
-//       fetchData();
-//       namaController.clear();
-//       posisiController.clear();
-//     } else {
-//       throw Exception('Failed to add data');
-//     }
-//   }
-
-//   Future<void> updateData(String id) async {
-//     final response = await http.patch(
-//       Uri.parse('$apiUrl/$id'),
-//       headers: {'Content-Type': 'application/json'},
-//       body: json.encode({
-//         'nama': namaController.text,
-//         'posisi': posisiController.text,
-//       }),
-//     );
-
-//     if (response.statusCode == 200) {
-//       fetchData();
-//       idController.clear();
-//       namaController.clear();
-//       posisiController.clear();
-//     } else {
-//       throw Exception('Failed to update data');
-//     }
-//   }
-
-//   Future<void> deleteData(String id) async {
-//     final response = await http.delete(Uri.parse('$apiUrl/$id'));
-
-//     if (response.statusCode == 200) {
-//       fetchData();
-//     } else {
-//       throw Exception('Failed to delete data');
-//     }
-//   }
-//   // var datajson;
-//   // int totalData = 0;
-//   // Future _getapi() async {
-//   //   Map<String, String> headers = {
-//   //     'Content-Type': 'application/json',
-//   //     'Accept': 'application/json'
-//   //   };
-
-//   //   var response = await http
-//   //       .get(Uri.parse('http://localhost:1337/api/players'), headers: headers);
-
-//   //   datajson = jsonDecode(response.body);
-//   //   print(datajson["data"][0]["attributes"][0]);
-//   //   setState(() {
-//   //     totalData = datajson["meta"]["pagination"]["total"];
-//   //   });
-//   // }
-//   // final List<String> nama = [
-//   //   "Ilham",
-//   //   "Handi",
-//   //   "Angger",
-//   //   "Asif",
-//   //   "Ilhan",
-//   //   "Arip",
-//   //   "Jabran"
-//   // ];
-
-//   // final List<String> posisi = [
-//   //   "Posisi : Kiper",
-//   //   "Posisi : CB",
-//   //   "Posisi : LB",
-//   //   "Posisi : RB",
-//   //   "Posisi : CM",
-//   //   "Posisi : LW",
-//   //   "Posisi : ST"
-//   // ];
-//   // final List<String> umur = ["20", "30", "18", "19", "16", "17", "19"];
-//   final List<String> foto = [
-//     "assets/images/bg.png",
-//     "assets/images/bg.png",
-//   ];
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
+// Scaffold(
 //       appBar: AppBar(
 //         title: Center(
 //           child: Container(
@@ -212,8 +73,25 @@ import 'package:http/http.dart' as http;
 //         },
 //       ),
 //     );
-//   }
-// }
+
+//   // var datajson;
+//   // int totalData = 0;
+//   // Future _getapi() async {
+//   //   Map<String, String> headers = {
+//   //     'Content-Type': 'application/json',
+//   //     'Accept': 'application/json'
+//   //   };
+
+//   //   var response = await http
+//   //       .get(Uri.parse('http://localhost:1337/api/players'), headers: headers);
+
+//   //   datajson = jsonDecode(response.body);
+//   //   print(datajson["data"][0]["attributes"][0]);
+//   //   setState(() {
+//   //     totalData = datajson["meta"]["pagination"]["total"];
+//   //   });
+//   // }
+
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
 
@@ -224,7 +102,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final apiUrl = 'http://localhost:5000/flutter';
+  final apiUrl = 'http://localhost:5000/player';
 
   List<dynamic> data = [];
   bool isLoading = true;
@@ -232,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final idController = TextEditingController();
   final namaController = TextEditingController();
   final posisiController = TextEditingController();
-
+  final fotoController = TextEditingController();
   @override
   void initState() {
     super.initState();
@@ -267,6 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: json.encode({
         'nama': namaController.text,
         'posisi': posisiController.text,
+        'foto': fotoController.text,
       }),
     );
 
@@ -274,6 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
       fetchData();
       namaController.clear();
       posisiController.clear();
+      fotoController.clear();
     } else {
       throw Exception('Failed to add data');
     }
@@ -286,6 +166,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: json.encode({
         'nama': namaController.text,
         'posisi': posisiController.text,
+        'foto': fotoController.text,
       }),
     );
 
@@ -294,6 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
       idController.clear();
       namaController.clear();
       posisiController.clear();
+      fotoController.clear();
     } else {
       throw Exception('Failed to update data');
     }
@@ -313,9 +195,19 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
-        backgroundColor: Color.fromARGB(255, 2, 80, 21),
+        title: Center(
+          child: Container(
+              child: Image.asset(
+            "assets/images/players-b.jpg",
+            width: 150,
+          )),
+        ),
+        backgroundColor: Color.fromARGB(255, 4, 110, 8),
       ),
+      // appBar: AppBar(
+      //   title: Text(widget.title),
+      //   backgroundColor: Color.fromARGB(255, 2, 80, 21),
+      // ),
       body: isLoading
           ? Center(child: CircularProgressIndicator())
           : ListView.builder(
@@ -348,6 +240,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                       controller: posisiController,
                                       decoration: InputDecoration(
                                         labelText: 'Posisi',
+                                      ),
+                                    ),
+                                    TextField(
+                                      controller: fotoController,
+                                      decoration: InputDecoration(
+                                        labelText: 'Link Foto',
                                       ),
                                     ),
                                   ],
@@ -402,6 +300,11 @@ class _MyHomePageState extends State<MyHomePage> {
                           );
                         },
                       ),
+                      Image.network(
+                        data[index]['foto'],
+                        width: 50,
+                        height: 50,
+                      )
                     ],
                   ),
                 );
@@ -430,6 +333,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       controller: posisiController,
                       decoration: InputDecoration(
                         labelText: 'Posisi',
+                      ),
+                    ),
+                    TextField(
+                      controller: fotoController,
+                      decoration: InputDecoration(
+                        labelText: 'Link Foto',
                       ),
                     ),
                   ],

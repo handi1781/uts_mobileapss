@@ -1,5 +1,39 @@
-2023/07/16-13:07:55.941 47a0 Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.39d0db1b\flutter_tools_chrome_device.b2d25b63\Default\Session Storage/MANIFEST-000001
-2023/07/16-13:07:55.943 47a0 Recovering log #10
-2023/07/16-13:07:55.948 47a0 Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.39d0db1b\flutter_tools_chrome_device.b2d25b63\Default\Session Storage/000010.log 
-2023/07/16-13:07:55.951 47a0 Delete type=0 #3
-2023/07/16-13:07:55.951 47a0 Delete type=0 #6
+2023/07/25-19:12:08.957 3014 Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.faf238cb\flutter_tools_chrome_device.ef099a76\Default\Session Storage/MANIFEST-000001
+2023/07/25-19:12:08.962 3014 Recovering log #25
+2023/07/25-19:12:08.971 3014 Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.faf238cb\flutter_tools_chrome_device.ef099a76\Default\Session Storage/000025.log 
+2023/07/25-19:12:08.972 3014 Delete type=0 #3
+2023/07/25-19:12:08.972 3014 Delete type=0 #6
+2023/07/25-19:12:08.972 3014 Delete type=2 #7
+2023/07/25-19:12:08.972 3014 Delete type=2 #9
+2023/07/25-19:12:08.972 3014 Delete type=0 #10
+2023/07/25-19:15:03.064 5d40 Level-0 table #30: started
+2023/07/25-19:15:03.092 5d40 Level-0 table #30: 360860 bytes OK
+2023/07/25-19:15:03.102 5d40 Delete type=0 #25
+2023/07/25-19:16:21.656 5d40 Level-0 table #32: started
+2023/07/25-19:16:21.688 5d40 Level-0 table #32: 1151585 bytes OK
+2023/07/25-19:16:21.693 5d40 Delete type=0 #29
+2023/07/25-19:16:26.607 5d40 Level-0 table #34: started
+2023/07/25-19:16:26.634 5d40 Level-0 table #34: 1150729 bytes OK
+2023/07/25-19:16:26.640 5d40 Delete type=0 #31
+2023/07/25-19:17:13.115 5d40 Level-0 table #36: started
+2023/07/25-19:17:13.148 5d40 Level-0 table #36: 1150633 bytes OK
+2023/07/25-19:17:13.152 5d40 Delete type=0 #33
+2023/07/25-19:17:13.154 5d40 Compacting 4@0 + 1@1 files
+2023/07/25-19:17:13.218 5d40 Generated table #37@0: 70 keys, 2306081 bytes
+2023/07/25-19:17:13.255 5d40 Generated table #38@0: 268 keys, 1156735 bytes
+2023/07/25-19:17:13.255 5d40 Compacted 4@0 + 1@1 files => 3462816 bytes
+2023/07/25-19:17:13.257 5d40 compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/07/25-19:17:13.258 5d40 Delete type=2 #27
+2023/07/25-19:17:13.259 5d40 Delete type=2 #30
+2023/07/25-19:17:13.259 5d40 Delete type=2 #32
+2023/07/25-19:17:13.259 5d40 Delete type=2 #34
+2023/07/25-19:17:13.259 5d40 Delete type=2 #36
+2023/07/25-19:17:27.634 5d40 Level-0 table #40: started
+2023/07/25-19:17:27.653 5d40 Level-0 table #40: 1148636 bytes OK
+2023/07/25-19:17:27.658 5d40 Delete type=0 #35
+2023/07/25-19:18:26.036 5d40 Level-0 table #42: started
+2023/07/25-19:18:26.053 5d40 Level-0 table #42: 421314 bytes OK
+2023/07/25-19:18:26.056 5d40 Delete type=0 #39
+2023/07/25-21:29:26.949 5d40 Level-0 table #44: started
+2023/07/25-21:29:26.961 5d40 Level-0 table #44: 391555 bytes OK
+2023/07/25-21:29:26.964 5d40 Delete type=0 #41

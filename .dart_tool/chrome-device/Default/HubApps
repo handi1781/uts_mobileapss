@@ -34,9 +34,9 @@
       "description": "Contextually relevant info for any page",
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_chatB_active_dark.png/1.1.14/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_chatB_hc.png/1.1.14/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_chatB_active_light.png/1.1.14/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_chatB_active_dark.png/1.1.15/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_chatB_hc.png/1.1.15/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_chatB_active_light.png/1.1.15/asset"
          }
       },
       "id": "cd4688a9-e888-48ea-ad81-76193d56b1be",
@@ -78,7 +78,7 @@
                "signal_name": "IsMsnArticleUrlFromNtpP1P2",
                "signal_threshold": 0.5
             },
-            "text": "See AI-generated summary for your article",
+            "text": "Get AI-powered insights about this page",
             "type": "triggering_config"
          } ]
       },
@@ -86,7 +86,7 @@
       "target": {
          "command": "discover_chat"
       },
-      "version": "1.1.14"
+      "version": "1.1.15"
    }, {
       "auto_show": {
          "enabled": true,
@@ -421,7 +421,7 @@
          },
          "icon": {
             "raster_icon": {
-               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_word.png/1.7.29/asset"
+               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_word.png/1.7.30/asset"
             }
          },
          "location": "hovercard",
@@ -434,7 +434,7 @@
          },
          "icon": {
             "raster_icon": {
-               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_excel.png/1.7.29/asset"
+               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_excel.png/1.7.30/asset"
             }
          },
          "location": "hovercard",
@@ -447,7 +447,7 @@
          },
          "icon": {
             "raster_icon": {
-               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_power_point.png/1.7.29/asset"
+               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_power_point.png/1.7.30/asset"
             }
          },
          "location": "hovercard",
@@ -467,12 +467,11 @@
       "custom_actions|flight:msEdgeHubAppOfficePlusChina": [  ],
       "default_locale": "en",
       "description": "Access Microsoft 365 apps for free",
-      "description|flight:msRemoveStringFromChromiumCode": "Access Microsoft 365 apps for free",
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_dark.png/1.7.29/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_hc.png/1.7.29/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_light.png/1.7.29/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_dark.png/1.7.30/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_hc.png/1.7.30/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_light.png/1.7.30/asset"
          }
       },
       "id": "64be4f9b-3b81-4b6e-b354-0ba00d6ba485",
@@ -498,7 +497,7 @@
          "url|flight:msEdgeHubAppOfficeCom": "https://www.office.com",
          "url|flight:msEdgeHubAppOfficePlusChina": "https://www.officeplus.cn/?sid=shoreline&endpoint=OPPC&source=OPCNshoreline"
       },
-      "version": "1.7.29"
+      "version": "1.7.30"
    }, {
       "auto_show": {
          "dsat_flyout": {
@@ -607,9 +606,9 @@
       "flights": [ "msEdgeSalvador" ],
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_image_creator_maximal_dark.png/1.0.13/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_image_creator_hc.png/1.0.13/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_image_creator_maximal_light.png/1.0.13/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_image_creator_maximal_dark.png/1.0.14/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_image_creator_hc.png/1.0.14/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_image_creator_maximal_light.png/1.0.14/asset"
          }
       },
       "id": "2caf0cf4-ea42-4083-b928-29b39da1182b",
@@ -620,13 +619,11 @@
       "notifications": {
          "enabled": false
       },
-      "on_by_default": true,
-      "on_by_default|device:managed": false,
       "target": {
          "url": "https://www.bing.com/images/create?FORM=ESHBIC&edgehub=1&lightschemeovr=1&partner=edgehub",
          "url|theme:dark": "https://www.bing.com/images/create?FORM=ESHBIC&edgehub=1&darkschemeovr=1&partner=edgehub"
       },
-      "version": "1.0.13"
+      "version": "1.0.14"
    }, {
       "capabilities": {
          "deprecated_hide_header": true,
@@ -767,12 +764,11 @@
       },
       "default_locale": "en",
       "description": "Create engaging visuals with ease",
-      "flights": [ "msEdgeHubAppDesigner", "msEdgeDesignerUI" ],
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_designer_color.png/1.0.10/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_designer_hc.png/1.0.10/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_designer_color.png/1.0.10/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_designer_color.png/1.0.11/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_designer_hc.png/1.0.11/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_designer_color.png/1.0.11/asset"
          }
       },
       "id": "2cb2db96-3bd0-403e-abe2-9269b3761041",
@@ -791,7 +787,7 @@
       "target": {
          "url": "edge://designer/"
       },
-      "version": "1.0.10"
+      "version": "1.0.11"
    }, {
       "capabilities": {
          "show_domain_in_header": true
@@ -1741,9 +1737,9 @@
       "flights": [ "msEdgeHubAppTheater" ],
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_theater_maximal_dark.png/1.0.4/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_theater_hc.png/1.0.4/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_theater_maximal_light.png/1.0.4/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_theater_maximal_dark.png/1.0.5/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_theater_hc.png/1.0.5/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_theater_maximal_light.png/1.0.5/asset"
          }
       },
       "id": "3458dfd2-bf1b-4d00-a6dd-a74a59d523c7",
@@ -1751,13 +1747,11 @@
       "locales": [ "ar", "de", "en", "es", "fr", "id", "it", "ja", "ko", "pt", "ru", "zh_CN" ],
       "manifest_version": 3,
       "name": "Theater",
-      "on_by_default|flight:msEdgeHubAppTheaterOnByDefault": true,
-      "on_by_default|flight:msEdgeHubAppTheaterOnByDefault|device:managed": false,
       "target": {
          "url": "https://www.bing.com/theater?features=theater",
          "url|locale:zh_CN": "https://cn.bing.com/theater?features=theater"
       },
-      "version": "1.0.4"
+      "version": "1.0.5"
    }, {
       "custom_actions": [ {
          "action": {

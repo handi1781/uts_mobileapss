@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:udemy_couse2/login.dart';
 import 'package:udemy_couse2/player.dart';
 import 'package:udemy_couse2/start_screen.dart';
+import 'package:udemy_couse2/store.dart';
 
 enum SampleItem { itemOne, itemTwo, itemThree }
 
@@ -86,7 +87,7 @@ class _pageState extends State<page> {
                         context,
                         MaterialPageRoute(
                             builder: (context) =>
-                                MyHomePage(title: "Players")));
+                                MyHomePage(title: "Persebaya Players")));
                   },
                   child: Container(
                     decoration: BoxDecoration(
@@ -137,8 +138,11 @@ class _pageState extends State<page> {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => StartScreen()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                Store(title: "Persebaya Store")));
                   },
                   child: Container(
                     decoration: BoxDecoration(

@@ -1,6 +1,35 @@
-2023/07/16-13:07:54.634 5ce4 Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.39d0db1b\flutter_tools_chrome_device.b2d25b63\Default\Sync Data\LevelDB/MANIFEST-000001
-2023/07/16-13:07:54.635 5ce4 Recovering log #12
-2023/07/16-13:07:54.636 5ce4 Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.39d0db1b\flutter_tools_chrome_device.b2d25b63\Default\Sync Data\LevelDB/000012.log 
-2023/07/16-13:07:54.636 5ce4 Delete type=0 #3
-2023/07/16-13:07:54.636 5ce4 Delete type=0 #6
-2023/07/16-13:07:54.636 5ce4 Delete type=0 #9
+2023/07/25-19:12:07.883 5c44 Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.faf238cb\flutter_tools_chrome_device.ef099a76\Default\Sync Data\LevelDB/MANIFEST-000001
+2023/07/25-19:12:07.883 5c44 Recovering log #23
+2023/07/25-19:12:07.885 5c44 Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.faf238cb\flutter_tools_chrome_device.ef099a76\Default\Sync Data\LevelDB/000023.log 
+2023/07/25-19:12:07.886 5c44 Delete type=0 #3
+2023/07/25-19:12:07.886 5c44 Delete type=0 #6
+2023/07/25-19:12:07.886 5c44 Delete type=2 #7
+2023/07/25-19:12:07.887 5c44 Delete type=0 #9
+2023/07/25-19:12:07.887 5c44 Delete type=2 #10
+2023/07/25-19:12:07.887 5c44 Delete type=0 #12
+2023/07/25-19:12:07.887 5c44 Delete type=2 #13
+2023/07/25-19:12:07.887 5c44 Delete type=0 #20
+2023/07/25-19:12:31.758 60bc Level-0 table #27: started
+2023/07/25-19:12:31.765 60bc Level-0 table #27: 74463 bytes OK
+2023/07/25-19:12:31.769 60bc Delete type=0 #23
+2023/07/25-19:15:54.153 60bc Level-0 table #29: started
+2023/07/25-19:15:54.164 60bc Level-0 table #29: 83117 bytes OK
+2023/07/25-19:15:54.179 60bc Delete type=0 #26
+2023/07/25-19:15:54.179 5f78 Compacting 4@0 + 1@1 files
+2023/07/25-19:15:54.188 5f78 Generated table #30@0: 215 keys, 22862 bytes
+2023/07/25-19:15:54.188 5f78 Compacted 4@0 + 1@1 files => 22862 bytes
+2023/07/25-19:15:54.190 5f78 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/07/25-19:15:54.192 5f78 Delete type=2 #19
+2023/07/25-19:15:54.192 5f78 Delete type=2 #21
+2023/07/25-19:15:54.192 5f78 Delete type=2 #24
+2023/07/25-19:15:54.192 5f78 Delete type=2 #27
+2023/07/25-19:15:54.192 5f78 Delete type=2 #29
+2023/07/25-19:18:40.593 60bc Level-0 table #32: started
+2023/07/25-19:18:40.608 60bc Level-0 table #32: 109546 bytes OK
+2023/07/25-19:18:40.611 60bc Delete type=0 #28
+2023/07/25-19:58:19.486 5f78 Level-0 table #34: started
+2023/07/25-19:58:19.494 5f78 Level-0 table #34: 77522 bytes OK
+2023/07/25-19:58:19.496 5f78 Delete type=0 #31
+2023/07/25-21:25:00.232 60bc Level-0 table #36: started
+2023/07/25-21:25:00.238 60bc Level-0 table #36: 68220 bytes OK
+2023/07/25-21:25:00.243 60bc Delete type=0 #33

@@ -1,3 +1,15 @@
-2023/06/07-14:29:58.132 2b48 Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.47d2b19f\flutter_tools_chrome_device.206faddf\Default\IndexedDB\https_ntp.msn.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/06/07-14:29:58.133 2b48 Recovering log #4
-2023/06/07-14:29:58.133 2b48 Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.47d2b19f\flutter_tools_chrome_device.206faddf\Default\IndexedDB\https_ntp.msn.com_0.indexeddb.leveldb/000004.log 
+2023/07/25-21:12:32.033 5f78 Reusing MANIFEST C:\Users\Handi\AppData\Local\Temp\flutter_tools.faf238cb\flutter_tools_chrome_device.ef099a76\Default\IndexedDB\https_ntp.msn.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/07/25-21:12:32.033 5f78 Recovering log #7
+2023/07/25-21:12:32.034 5f78 Reusing old log C:\Users\Handi\AppData\Local\Temp\flutter_tools.faf238cb\flutter_tools_chrome_device.ef099a76\Default\IndexedDB\https_ntp.msn.com_0.indexeddb.leveldb/000007.log 
+2023/07/25-21:13:05.758 60bc Level-0 table #12: started
+2023/07/25-21:13:05.766 60bc Level-0 table #12: 6097 bytes OK
+2023/07/25-21:13:05.770 60bc Delete type=0 #7
+2023/07/25-21:13:05.770 60bc Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/07/25-21:13:05.770 60bc Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01 \x03\x00`\x89O\xd6\x98xB\x00\x01{\x00e\x00d\x00g\x00e\x00n\x00e\x00x\x00t\x00-\x00b\x00a\x00s\x00e\x00-\x00V\x001\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00n\x00t\x00p\x00.\x00m\x00s\x00n\x00.\x00c\x00o\x00m\x00/\x00e\x00d\x00g\x00e\x00/\x00n\x00t\x00p\x00?\x00l\x00o\x00c\x00a\x00l\x00e\x00=\x00e\x00n\x00-\x00U\x00S\x00&\x00t\x00i\x00t\x00l\x00e\x00=\x00N\x00e\x00w\x00%\x002\x000\x00t\x00a\x00b\x00&\x00d\x00s\x00p\x00=\x001\x00&\x00s\x00p\x00=\x00B\x00i\x00n\x00g\x00&\x00i\x00s\x00F\x00R\x00E\x00M\x00o\x00d\x00a\x00l\x00B\x00a\x00c\x00k\x00g\x00r\x00o\x00u\x00n\x00d\x00=\x001\x00&\x00p\x00r\x00e\x00r\x00e\x00n\x00d\x00e\x00r\x00=\x001' @ 1069 : 1
+2023/07/25-21:13:05.770 60bc Compacting 1@1 + 1@2 files
+2023/07/25-21:13:05.774 60bc Generated table #13@1: 55 keys, 9357 bytes
+2023/07/25-21:13:05.774 60bc Compacted 1@1 + 1@2 files => 9357 bytes
+2023/07/25-21:13:05.778 60bc compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/07/25-21:13:05.778 60bc Delete type=2 #9
+2023/07/25-21:13:05.778 60bc Delete type=2 #12
+2023/07/25-21:13:05.779 60bc Manual compaction at level-1 from '\x00\x01\x01 \x03\x00`\x89O\xd6\x98xB\x00\x01{\x00e\x00d\x00g\x00e\x00n\x00e\x00x\x00t\x00-\x00b\x00a\x00s\x00e\x00-\x00V\x001\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00n\x00t\x00p\x00.\x00m\x00s\x00n\x00.\x00c\x00o\x00m\x00/\x00e\x00d\x00g\x00e\x00/\x00n\x00t\x00p\x00?\x00l\x00o\x00c\x00a\x00l\x00e\x00=\x00e\x00n\x00-\x00U\x00S\x00&\x00t\x00i\x00t\x00l\x00e\x00=\x00N\x00e\x00w\x00%\x002\x000\x00t\x00a\x00b\x00&\x00d\x00s\x00p\x00=\x001\x00&\x00s\x00p\x00=\x00B\x00i\x00n\x00g\x00&\x00i\x00s\x00F\x00R\x00E\x00M\x00o\x00d\x00a\x00l\x00B\x00a\x00c\x00k\x00g\x00r\x00o\x00u\x00n\x00d\x00=\x001\x00&\x00p\x00r\x00e\x00r\x00e\x00n\x00d\x00e\x00r\x00=\x001' @ 1069 : 1 .. (end); will stop at (end)
