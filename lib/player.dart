@@ -210,18 +210,26 @@ class _MyHomePageState extends State<MyHomePage> {
       // ),
       body: isLoading
           ? Center(child: CircularProgressIndicator())
-          : ListView.builder(
-              itemCount: data.length,
-              itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text(data[index]['nama']),
-                  subtitle: Text(data[index]['posisi']),
-                  trailing: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      IconButton(
-                        icon: Icon(Icons.edit),
-                        onPressed: () {
+          : Center(
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("./assets/images/title.png"),
+                      opacity: 0.2,
+                      fit: BoxFit.contain),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(5, 5, 14, 7),
+                  child: GridView.builder(
+                    itemCount: data.length,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 5,
+                      crossAxisSpacing: 5,
+                    ),
+                    itemBuilder: (context, index) {
+                      return InkWell(
+                        onTap: () {
                           showDialog(
                             context: context,
                             builder: (BuildContext context) {
@@ -252,13 +260,13 @@ class _MyHomePageState extends State<MyHomePage> {
                                 ),
                                 actions: [
                                   TextButton(
-                                    child: Text('Cancel'),
+                                    child: Icon(Icons.cancel),
                                     onPressed: () {
                                       Navigator.of(context).pop();
                                     },
                                   ),
                                   TextButton(
-                                    child: Text('Update'),
+                                    child: Icon(Icons.change_circle),
                                     onPressed: () {
                                       updateData(data[index]['id'].toString());
                                       Navigator.of(context).pop();
@@ -268,52 +276,155 @@ class _MyHomePageState extends State<MyHomePage> {
                               );
                             },
                           );
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => MyHomePage(title: "Persebaya Players"),
+                          //   ),
+                          // );
                         },
-                      ),
-                      IconButton(
-                        icon: Icon(Icons.delete),
-                        onPressed: () {
-                          showDialog(
-                            context: context,
-                            builder: (BuildContext context) {
-                              return AlertDialog(
-                                title: Text('Delete Data'),
-                                content: Text(
-                                    'Are you sure you want to delete this data?'),
-                                actions: [
-                                  TextButton(
-                                    child: Text('Cancel'),
-                                    onPressed: () {
-                                      Navigator.of(context).pop();
-                                    },
-                                  ),
-                                  TextButton(
-                                    child: Text('Delete'),
-                                    onPressed: () {
-                                      deleteData(data[index]['id'].toString());
-                                      Navigator.of(context).pop();
-                                    },
-                                  ),
-                                ],
-                              );
-                            },
-                          );
-                        },
-                      ),
-                      Image.network(
-                        data[index]['foto'],
-                        width: 50,
-                        height: 50,
-                      )
-                    ],
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.transparent,
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image.network(
+                                data[index]['foto'],
+                                width: 59,
+                                height: 59,
+                              ),
+                              Text(
+                                data[index]['nama'],
+                                style: TextStyle(
+                                  fontSize: 30,
+                                ),
+                              ),
+                              Text(data[index]['posisi']),
+                              IconButton(
+                                icon: Icon(Icons.delete),
+                                onPressed: () {
+                                  updateData(data[index]['id'].toString());
+                                  Navigator.of(context).pop();
+                                  // Tambahkan fungsi untuk menghapus data dari GridView
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
                   ),
-                );
-              },
+                ),
+              ),
             ),
+      // ListView.builder(
+      //     itemCount: data.length,
+      //     itemBuilder: (context, index) {
+      //       return ListTile(
+      //         title: Text(data[index]['nama']),
+      //         subtitle: Text(data[index]['posisi']),
+      //         trailing: Row(
+      //           mainAxisSize: MainAxisSize.min,
+      //           children: [
+      //             IconButton(
+      //               icon: Icon(Icons.edit),
+      //               onPressed: () {
+      //                 showDialog(
+      //                   context: context,
+      //                   builder: (BuildContext context) {
+      //                     return AlertDialog(
+      //                       title: Text('Update Data'),
+      //                       content: Column(
+      //                         mainAxisSize: MainAxisSize.min,
+      //                         children: [
+      //                           TextField(
+      //                             controller: namaController,
+      //                             decoration: InputDecoration(
+      //                               labelText: 'Nama',
+      //                             ),
+      //                           ),
+      //                           TextField(
+      //                             controller: posisiController,
+      //                             decoration: InputDecoration(
+      //                               labelText: 'Posisi',
+      //                             ),
+      //                           ),
+      //                           TextField(
+      //                             controller: fotoController,
+      //                             decoration: InputDecoration(
+      //                               labelText: 'Link Foto',
+      //                             ),
+      //                           ),
+      //                         ],
+      //                       ),
+      //                       actions: [
+      //                         TextButton(
+      //                           child: Text('Cancel'),
+      //                           onPressed: () {
+      //                             Navigator.of(context).pop();
+      //                           },
+      //                         ),
+      //                         TextButton(
+      //                           child: Text('Update'),
+      //                           onPressed: () {
+      //                             updateData(data[index]['id'].toString());
+      //                             Navigator.of(context).pop();
+      //                           },
+      //                         ),
+      //                       ],
+      //                     );
+      //                   },
+      //                 );
+      //               },
+      //             ),
+      //             IconButton(
+      //               icon: Icon(Icons.delete),
+      //               onPressed: () {
+      //                 showDialog(
+      //                   context: context,
+      //                   builder: (BuildContext context) {
+      //                     return AlertDialog(
+      //                       title: Text('Delete Data'),
+      //                       content: Text(
+      //                           'Are you sure you want to delete this data?'),
+      //                       actions: [
+      //                         TextButton(
+      //                           child: Text('Cancel'),
+      //                           onPressed: () {
+      //                             Navigator.of(context).pop();
+      //                           },
+      //                         ),
+      //                         TextButton(
+      //                           child: Text('Delete'),
+      //                           onPressed: () {
+      //                             deleteData(data[index]['id'].toString());
+      //                             Navigator.of(context).pop();
+      //                           },
+      //                         ),
+      //                       ],
+      //                     );
+      //                   },
+      //                 );
+      //               },
+      //             ),
+      //             Image.network(
+      //               data[index]['foto'],
+      //               width: 50,
+      //               height: 50,
+      //             )
+      //           ],
+      //         ),
+      //       );
+      //     },
+      //   ),
       floatingActionButton: FloatingActionButton(
         child: Icon(
           Icons.add,
         ),
+        backgroundColor: Color.fromARGB(255, 6, 116, 10),
         onPressed: () {
           showDialog(
             context: context,

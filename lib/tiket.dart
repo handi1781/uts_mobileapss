@@ -2,29 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-class Store extends StatefulWidget {
-  Store({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+class tiket extends StatefulWidget {
+  const tiket({super.key});
 
   @override
-  _Store createState() => _Store();
+  State<tiket> createState() => _tiketState();
 }
 
-class _Store extends State<Store> {
-  final apiUrl = 'http://localhost:5000/store';
-  final apiUrl2 = 'http://localhost:5000/order';
+class _tiketState extends State<tiket> {
+  final apiUrl = 'http://localhost:5000/tiket';
+  final apiUrl2 = 'http://localhost:5000/pesan';
 
   List<dynamic> data = [];
   bool isLoading = true;
 
   final idController = TextEditingController();
-  final namaController = TextEditingController();
-  final deskripsiController = TextEditingController();
+  final pertandinganController = TextEditingController();
+  final jadwalController = TextEditingController();
   final hargaController = TextEditingController();
-  final fotoController = TextEditingController();
+  final lokasiController = TextEditingController();
 
-  final jumlahorderController = TextEditingController();
+  final jumlahpesanController = TextEditingController();
   final keteranganController = TextEditingController();
 
   @override
@@ -59,20 +57,20 @@ class _Store extends State<Store> {
       Uri.parse(apiUrl),
       headers: {'Content-Type': 'application/json'},
       body: json.encode({
-        'nama': namaController.text,
-        'deskripsi': deskripsiController.text,
+        'pertandingan': pertandinganController.text,
+        'jadwal': jadwalController.text,
         'harga': int.parse(hargaController.text),
-        'foto': fotoController.text,
+        'lokasi': lokasiController.text,
       }),
     );
 
     if (response.statusCode == 201) {
       fetchData();
       idController.clear();
-      namaController.clear();
-      deskripsiController.clear();
+      pertandinganController.clear();
+      jadwalController.clear();
       hargaController.clear();
-      fotoController.clear();
+      lokasiController.clear();
     } else {
       throw Exception('Failed to add data');
     }
@@ -93,7 +91,7 @@ class _Store extends State<Store> {
       Uri.parse(apiUrl2),
       headers: {'Content-Type': 'application/json'},
       body: json.encode({
-        'jumlahpesan': int.parse(jumlahorderController.text),
+        'jumlahpesan': int.parse(jumlahpesanController.text),
         'keterangan': keteranganController.text,
       }),
     );
@@ -123,7 +121,7 @@ class _Store extends State<Store> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Persebaya Tiket"),
         backgroundColor: Color.fromARGB(255, 4, 121, 8),
       ),
       body: isLoading
@@ -131,10 +129,8 @@ class _Store extends State<Store> {
           : Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage("./assets/images/bg.png"),
-                    opacity: 0.3,
-                    // Mengubah ke hitam putih
-
+                    image: AssetImage("./assets/images/title.png"),
+                    opacity: 0.2,
                     fit: BoxFit.contain),
               ),
               child: Padding(
@@ -153,16 +149,16 @@ class _Store extends State<Store> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Expanded(
-                            child: Image.network(
-                              data[index]['foto'],
+                            child: Image.asset(
+                              "./assets/images/logobri.png",
                               width: 100,
                               height: 100,
                               fit: BoxFit.cover,
                             ),
                           ),
                           Text(
-                            data[index]['nama'],
-                            style: TextStyle(fontSize: 25),
+                            data[index]['pertandingan'],
+                            style: TextStyle(fontSize: 15),
                           ),
                           Text('\Rp${data[index]['harga']}'),
                           IconButton(
@@ -184,19 +180,17 @@ class _Store extends State<Store> {
                                           CrossAxisAlignment.center,
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
-                                        Image.network(
-                                          data[index]['foto'],
+                                        Image.asset(
+                                          "./assets/images/logibri.png",
                                           height: 150,
                                           width: 150,
                                           fit: BoxFit.contain,
                                         ),
                                         SizedBox(height: 10),
-                                        Text(data[index]['deskripsi']),
-                                        SizedBox(
-                                          height: 10,
-                                        ),
+                                        Text(data[index]['pertandingan']),
+                                        Text(data[index]['jadwal']),
                                         TextField(
-                                          controller: jumlahorderController,
+                                          controller: jumlahpesanController,
                                           decoration: InputDecoration(
                                             labelText: 'Jumlah Order',
                                           ),
@@ -241,15 +235,15 @@ class _Store extends State<Store> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     TextField(
-                      controller: namaController,
+                      controller: pertandinganController,
                       decoration: InputDecoration(
-                        labelText: 'Nama',
+                        labelText: 'Pertandingan',
                       ),
                     ),
                     TextField(
-                      controller: deskripsiController,
+                      controller: jadwalController,
                       decoration: InputDecoration(
-                        labelText: 'Deskripsi',
+                        labelText: 'Jadwal',
                       ),
                     ),
                     TextField(
@@ -260,9 +254,9 @@ class _Store extends State<Store> {
                       keyboardType: TextInputType.number,
                     ),
                     TextField(
-                      controller: fotoController,
+                      controller: lokasiController,
                       decoration: InputDecoration(
-                        labelText: 'Link Foto',
+                        labelText: 'LOkasi',
                       ),
                     ),
                   ],

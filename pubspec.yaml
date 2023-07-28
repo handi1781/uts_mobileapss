@@ -72,6 +72,7 @@ flutter:
     - assets/images/bg.png
     - assets/images/title.png
     - assets/images/players-b.jpg
+    - assets/images/buaya.png
     - .env
 
   # An image asset can refer to one or more resolution-specific "variants", see
